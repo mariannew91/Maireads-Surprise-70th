@@ -170,10 +170,15 @@ header li {
     height: auto;
     padding: 0 15px;
     border-right: 2px solid rgb(210, 180, 120);
+    white-space: nowrap;
 }
 
 header li:last-child {
     border-right: none;
+}
+
+.venue-short {
+    display: none;
 }
 
 /* Photo of Mum */
@@ -557,6 +562,15 @@ footer {
         margin: 0;
     }
 
+   
+    .venue-full {
+        display: none;
+    }
+    .venue-short {
+        display: inline;
+    }
+    
+
     .confet {
         width: 95%;
         height: auto;
@@ -580,7 +594,7 @@ footer {
 
     nav .rsvp-nav {
         position: absolute;
-        top: 8px;
+        top: 45px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -618,9 +632,9 @@ footer {
     
     nav ul {
         text-align: center;
-        padding: 5px 10px;
+        padding: 3px 10px;
         margin: 0;
-        margin-top: 35px;
+        margin-top: 2px;
         line-height: 0.3;
         padding-left: 25px
     }
@@ -697,6 +711,13 @@ footer {
     }
 }
 
+@media (max-width: 450px) {
+    nav a {
+        font-size: 0.8rem;
+        padding: 8px 8px;
+    }
+}
+
 @media (max-width: 400px) {
 
     #hotels li {
@@ -716,7 +737,7 @@ footer {
     }
 
     nav {
-        height: auto;
+        min-height: 80px;
         padding: 5px 0 8px 0;
     }
 
@@ -739,5 +760,14 @@ footer {
         transform: none !important;
     }
     
+}
+
+@media (max-width: 360px) {
+
+    nav a {
+        font-size: 0.6rem;
+        padding: 6px 6px;
+    }
+
 }
 
