@@ -494,7 +494,7 @@ footer {
     margin: 0 auto 10px auto;
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
    
     .confet {
         width: 50%;
@@ -510,8 +510,8 @@ footer {
     }
 
     nav a {
-        padding: 4px 8px;
-        font-size: 0.9rem;
+        font-size: 1rem;
+        padding: 6px 9px;
     }
 
     .rsvp-nav {
@@ -525,11 +525,11 @@ footer {
     
 }
 
-@media (max-width: 700px) {
+@media (max-width: 755px) {
 
     nav a {
-        font-size: 1rem;
-        padding: 6px 9px;
+        padding: 4px 8px;
+        font-size: 0.9rem;
     }
 
     .rsvp-nav a {
@@ -581,15 +581,15 @@ footer {
 
     nav {
         height: 12%;
-        padding: 5px 0 8px 0;
-        
+        padding: 5px 0 8px 0;        
     }
 
     nav a {
         display: inline-block;
         padding: 10px 15px;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         border-radius: 6px;
+        top: 5px;
     }
 
     nav .rsvp-nav {
@@ -645,6 +645,13 @@ footer {
         padding: 0;
     }
 
+    .its {
+        margin-bottom: -5px;
+    }
+
+    header {
+        margin-top: 100px;
+    }
 
     header h1 {
         font-size: 2.2rem;
@@ -656,6 +663,7 @@ footer {
     }
     #date-info {
         font-size: 1.2rem;
+        scroll-margin-top: 60px;
     }
     .details p {
         padding: 0 30px;
@@ -711,7 +719,14 @@ footer {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 430px) {
     nav a {
         font-size: 0.8rem;
         padding: 8px 8px;
