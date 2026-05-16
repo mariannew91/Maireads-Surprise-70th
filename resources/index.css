@@ -308,6 +308,7 @@ p span {
 
 .taxis li {
     display: block;
+    white-space: nowrap;
     margin: 10px 0;
     padding: 0 15px;
     border-right: 2px solid rgb(210, 180, 120);
@@ -518,165 +519,6 @@ footer {
 
     
 }
-    
-@media (max-width: 600px) {
-
-    .confet {
-        width: 95%;
-        height: auto;
-        top: 30%;
-        left: 65%;
-        transform: translate(-50%, -50%);
-    }
-
-    nav {
-        height: 12%;
-        padding: 5px 0 8px 0;
-        
-    }
-
-    nav a {
-        display: inline-block;
-        padding: 10px 12px;
-        font-size: 0.9rem;
-        border-radius: 6px;
-    }
-
-    nav .rsvp-nav {
-        position: absolute;
-        top: 8px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    nav .rsvp-nav a {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-    }   
-    
-   nav li:not(.top) a:hover, nav li:not(.top) a:active {
-        padding: 10px 12px;
-    }
-
-    .top a:hover, .top a:active {
-        padding: 0;
-    }
-    
-    .top {
-        position: absolute;
-        top: 8px;
-        left: 8px;
-        padding: 0;
-    
-    }
-
-    .top a {
-        padding: 0;
-        width: 35px;
-        height: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    
-    nav ul {
-        text-align: center;
-        padding: 5px 10px;
-        margin: 0;
-        margin-top: 45px;
-        line-height: 0.3;
-        padding-left: 25px
-    }
-
-    nav li {
-        display: inline-block;
-        margin: 2px 2px;
-        padding: 0;
-    }
-
-    nav a {
-        display: inline-block;
-        padding: 10px 12px;
-        font-size: 0.9rem;
-        border-radius: 6px;
-    }
-
-    header h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
-    }
-
-    header h2 {
-        font-size: 1.2rem;
-    }
-    #date-info {
-        font-size: 1.2rem;
-    }
-    .details p {
-        padding: 0 30px;
-        max-width: 100%;
-        font-size: 1.1rem;
-    }
-
-
-    .hotel-name a:hover {
-        padding: 8px 12px;
-    }
-
-    #hotels a:hover img {
-        padding: 0 !important;
-        margin: 0 !important;
-        transform: none !important;
-    }
-
-    #hotels .hotel-link:hover {
-        padding: 0 !important;
-    }
-
-    .email {
-        width: 15%;
-        height: auto;
-    }
-}
-
-@media (max-width: 400px) {
-
-    #hotels li {
-    flex-direction: column;
-    align-items: center;
-    }
-
-    .hotel-name {
-        text-align: center;
-        width: auto;
-    }
-
-    nav {
-        height: auto;
-        padding: 5px 0 8px 0;
-    }
-
-    nav a {
-        padding: 6px 8px;
-        font-size: 0.8rem;
-    }
-
-    .hotel-name a:hover {
-        padding: 8px 12px;
-    }
-
-    #hotels .hotel-link:hover {
-        padding: 0 !important;
-    }
-
-    #hotels a:hover img {
-        padding: 0 !important;
-        margin: 0 !important;
-        transform: none !important;
-    }
-    
-}
 
 @media (max-width: 700px) {
 
@@ -707,3 +549,195 @@ footer {
         font-size: 1.2rem;
     }
 }
+    
+@media (max-width: 600px) {
+
+    #date-info li {
+        padding: 0 8px;
+        margin: 0;
+    }
+
+    .confet {
+        width: 95%;
+        height: auto;
+        top: 30%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav {
+        height: 12%;
+        padding: 5px 0 8px 0;
+        
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+
+    nav .rsvp-nav {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav .rsvp-nav a {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }   
+    
+    nav li:not(.top) a:hover, nav li:not(.top) a:active {
+        padding: 10px 12px;
+    }
+
+    .top a:hover, .top a:active {
+        padding: 0;
+    }
+    
+    .top {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 0;
+    
+    }
+
+    .top a {
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    nav ul {
+        text-align: center;
+        padding: 5px 10px;
+        margin: 0;
+        margin-top: 35px;
+        line-height: 0.3;
+        padding-left: 25px
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 2px 2px;
+        padding: 0;
+    }
+
+
+    header h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+    #date-info {
+        font-size: 1.2rem;
+    }
+    .details p {
+        padding: 0 30px;
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .taxis li {
+        border-right: none;
+    }
+
+    .taxis li a {
+        display: block;
+        margin: 2px 0;
+    }
+
+    #hotels li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-img {
+        width: 80%;
+        height: 150px;
+    }
+
+    .hotel-name {
+        text-align: center;
+        width: auto;
+    }
+
+    #hotels .hotel-link {
+        width: 80%;
+    }
+
+    .hotel-name a:hover {
+        padding: 8px 12px;
+    }
+
+    #hotels a:hover img {
+        padding: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
+
+    #hotels .hotel-link:hover {
+        padding: 0 !important;
+    }
+
+    .email {
+        width: 15%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #hotels li {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #date-info li {
+        padding: 0 8px;
+        margin: 0;
+    }
+
+    .hotel-name {
+        text-align: center;
+        width: auto;
+    }
+
+    nav {
+        height: auto;
+        padding: 5px 0 8px 0;
+    }
+
+    nav a {
+        padding: 8px 8px;
+        font-size: 0.8rem;
+    }
+
+    .hotel-name a:hover {
+        padding: 8px 12px;
+    }
+
+    #hotels .hotel-link:hover {
+        padding: 0 !important;
+    }
+
+    #hotels a:hover img {
+        padding: 0 !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
+    
+}
+
