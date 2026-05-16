@@ -1,0 +1,39 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+
+h1 {
+  color: rgb(185, 231, 197);
+  background-color: rgb(98, 6, 6);
+  
+}
+
+h2 {
+  color: SteelBlue;
+  background-color: rgb(98, 6, 6);
+}
+
+
+p, 
+li {
+  font-size: 18px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;}
+
+.banner {
+    background-color:#B2B6B7;
+    padding: 100px;
+    text-align: center;
+}
+
+.footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
