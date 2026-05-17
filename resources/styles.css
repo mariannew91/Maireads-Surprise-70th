@@ -625,6 +625,8 @@ footer {
         top: 45px;
         left: 50%;
         transform: translateX(-50%);
+        border: 1px solid rgb(247, 246, 255);
+        border-radius: 8px;
     }
 
     nav .rsvp-nav a {
@@ -717,6 +719,8 @@ footer {
     .hotel-img {
         width: 80%;
         height: 150px;
+        display: block;
+        margin: 0 auto;
     }
 
     .hotel-name {
@@ -726,6 +730,8 @@ footer {
 
     #hotels .hotel-link {
         width: 80%;
+        align-self: center;
+        
     }
 
     .hotel-name a:hover {
