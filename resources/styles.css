@@ -508,6 +508,8 @@ footer {
     width: 13%;
     height: auto;
     opacity: 0.65;
+    max-height: 150px;
+    object-fit: contain;
 }
 
 #left-flower {
