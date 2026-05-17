@@ -112,6 +112,10 @@ nav a:hover {
     
 }
 
+.short-label {
+    display: none;
+}
+
 /* Header */
 
 #header {
@@ -179,6 +183,10 @@ header li:last-child {
 
 .venue-short {
     display: none;
+}
+
+.venue-full {
+    border-right: none;
 }
 
 /* Photo of Mum */
@@ -614,10 +622,11 @@ footer {
 
     nav a {
         display: inline-block;
-        padding: 10px 15px;
-        font-size: 1.1rem;
+        padding: 10px 20px;
+        font-size: 1.3rem;
         border-radius: 6px;
         top: 5px;
+        
     }
 
     nav .rsvp-nav {
@@ -625,8 +634,6 @@ footer {
         top: 45px;
         left: 50%;
         transform: translateX(-50%);
-        border: 1px solid rgb(247, 246, 255);
-        border-radius: 8px;
     }
 
     nav .rsvp-nav a {
@@ -674,6 +681,14 @@ footer {
         margin: 2px 2px;
         padding: 0;
     }
+
+    .full-label {
+        display: none;
+    }
+    .short-label {
+        display: inline;
+    }
+
 
     .its {
         margin-bottom: -5px;
@@ -756,15 +771,15 @@ footer {
 
 @media (max-width: 480px) {
     nav a {
-        font-size: 0.9rem;
-        padding: 10px 15px;
+        font-size: 1.1rem;
+        padding: 10px 17px;
     }
 }
 
 @media (max-width: 430px) {
     nav a {
-        font-size: 0.8rem;
-        padding: 8px 8px;
+        font-size: 0.9rem;
+        padding: 10px 10px;
     }
 }
 
@@ -792,8 +807,8 @@ footer {
     }
 
     nav a {
-        padding: 8px 8px;
-        font-size: 0.8rem;
+        padding: 10px 10px;
+        font-size: 0.9rem;
     }
 
     .hotel-name a:hover {
