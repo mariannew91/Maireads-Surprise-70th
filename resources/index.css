@@ -440,6 +440,7 @@ p span {
 
 #contact {
     scroll-margin-top: 60px;
+    
 }
 
 #contact h2 {
@@ -480,11 +481,20 @@ p span {
 /* Footer */
 
 footer {
-    text-align: center;
-    padding: 20px;
+    padding: 0;
     background-color: rgb(28, 24, 54);
     color: rgb(210, 180, 120);
     font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#footer-text {
+    text-align: center;
+    flex: 1;
+    padding: 20px 0;
 }
 
 .shh {
@@ -493,6 +503,22 @@ footer {
     display: block;
     margin: 0 auto 10px auto;
 }
+
+#left-flower, #right-flower {
+    width: 13%;
+    height: auto;
+    opacity: 0.65;
+}
+
+#left-flower {
+    transform: rotate(30deg);
+}
+
+#right-flower {
+    transform: scaleX(-1) rotate(30deg);
+}
+
+
 
 @media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
    
