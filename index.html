@@ -5,11 +5,16 @@
     content="width=device-width, initial-scale=1.0">
     
     <title>Mairead's Surprise 70th</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./resources/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@700&family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="./resources/script.js" defer></script>
 </head>
 <body>
     <img src="./resources/images/confet.png" class="confet">
@@ -28,13 +33,43 @@
         <h3 class="its">It's</h3>
         <h1>Mairead's Surprise 70th</h1>
         <h2>And you're invited! Keep the secret and join us for the big reveal.</h2>
-        <img class="photo" src="./resources/images/Mairead1.jpeg" alt="Mairead's Photo">
+        <div id="count-and-photo">
+            <img class="photo" src="./resources/images/Mairead1.jpeg" alt="Mairead's Photo">
+            
+            <!--<h1 id="count-title">Countdown to the big day</h1>''-->
+        
+            <div id="countdown-cards">
+                <div class="count-card">
+                    <h2 class="time" id="month-num">0</h2>
+                    <p>Months</p>
+                </div>
+
+                <div class="count-card">
+                    <h2 class="time" id="day-num">0</h2>
+                    <p>Days</p>
+                </div>
+
+                <div class="count-card">
+                    <h2 class="time" id="hour-num">0</h2>
+                    <p>Hours</p>
+                </div>
+
+                <div class="count-card">
+                    <h2 class="time" id="second-num">0</h2>
+                    <p>Seconds</p>
+                </div>
+
+            
+            </div>
+        </div>
+        
         <ul id="date-info">
-            <li>Saturday, 19<span class="small">th</span> Sept</li>
-            <li>4:30<span class="small">pm</span> - late</li>
-            <li class="venue-full">Bar 918 @ Malkins Bank Golf Course</li>
-            <li class="venue-short">Bar 918, Malkins Bank</li>
+            <li>Saturday, <span class="nums">19</span><span class="small">th</span> Sept</li>
+            <li><span class="nums">4:30</span><span class="small">pm</span> - late</li>
+            <li class="venue-full"><a href="https://maps.app.goo.gl/F2hmdUnCpJQQcrMc8" target="_blank" class="bar-name">Bar <span class="nums">918</span> @ Malkins Bank Golf Course</a></li>
+            <li class="venue-short"><a href="https://maps.app.goo.gl/F2hmdUnCpJQQcrMc8" target="_blank" class="bar-name">Bar <span class="nums">918</span>, Malkins Bank</a></li>
         </ul>
+         <h3 id="reminder"><a href="#rsvp">Don't forget to RSVP!</a></h3>
 
     </header>
     
@@ -42,15 +77,16 @@
     
     <div id="details" class="details section">
         <h2>On the Night</h2>
+        
         <p>Join us for a brilliant night to celebrate Mairead’s 70th — good food, drinks, and music. Let's make this a night to remember!</p>  
             
         <p><span>Please arrive by 5:15pm at the latest!</span></p>
         <p>Mairead is due to arrive at 5:30pm. Help us keep the surprise intact by being inside and ready for the big reveal!</p>
         <p><strong>Running late?</strong></p>
-        <p>Don't panic — just hang back in the large car park until she’s arrived so we don’t accidentally ruin the big surprise.
-        
-        
-    </div>
+        <p>Don't panic — just hang back in the large car park until she’s arrived so we don’t accidentally ruin the big surprise.</p>
+    </div>   
+    
+    
     <div id="rsvp" class="section">
         <h2>RSVP</h2>
         <p>Please let us know if you can make it by the 1st of August.</p>
@@ -163,7 +199,9 @@
             <img class="email" src="./resources/images/email.png" alt="email icon">
                 maireads70th@gmail.com</a>
         </div>
+        
     </div>
+    
     <footer>
         <img id="left-flower" src="./resources/images/cherry-flower.png">
         <div id="footer-text">
@@ -171,7 +209,7 @@
             <p>Shh - Don't forget to keep the secret!</p>
         </div>
         <img id="right-flower" src="./resources/images/cherry-flower.png">
-
+        
     </footer>
 </body>
 </html>
