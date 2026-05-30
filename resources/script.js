@@ -73,7 +73,7 @@ const minutesEl = document.getElementById("minute-num");
 const secondsEl = document.getElementById("second-num");
 
 // Countdown target date (The party start time)
-const partyDate = "2026-09-26T16:30:00";
+const partyDate = "2026-09-19T16:30:00";
 
 countdown(
   partyDate,
