@@ -1,6 +1,16 @@
 // 1. Centralized helper to switch UI or hide everything post-party
 function handlePartyEndState() {
   const cardContainer = document.getElementById("countdown-cards");
+  const rsvpNav = document.getElementById("rsvp-nav");
+  const reminder = document.getElementById("reminder");
+
+  if (rsvpNav) {
+    rsvpNav.innerHTML = '<a href="photos.html">📸 Photos</a>';
+  }
+
+  if (reminder) {
+    reminder.innerHTML = '<a href="photos.html">Check out the photos from the night</a>';
+  }
   
   if (!cardContainer) return;
 
@@ -73,7 +83,7 @@ const minutesEl = document.getElementById("minute-num");
 const secondsEl = document.getElementById("second-num");
 
 // Countdown target date (The party start time)
-const partyDate = "2026-09-19T16:30:00";
+const partyDate = "2026-07-31T21:36:00";
 
 countdown(
   partyDate,
