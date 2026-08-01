@@ -9,7 +9,7 @@ function handlePartyEndState() {
   }
 
   if (reminder) {
-    reminder.innerHTML = '<a href="photos.html">Check out the photos from the night</a>';
+    reminder.innerHTML = '<a href="photos.html">Photo Album</a>';
   }
   
   if (!cardContainer) return;
