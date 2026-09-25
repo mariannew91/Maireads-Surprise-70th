@@ -21,7 +21,7 @@ body {
 }
 
 .album-button {
-   display: inline-block;
+   display: block;
 
     background-color: rgb(210, 180, 120);
 
@@ -38,6 +38,8 @@ body {
     font-weight: bold;
 
     transition: 0.3s ease;
+   
+   width: fit-content;
    
    margin: 0 auto;
 
