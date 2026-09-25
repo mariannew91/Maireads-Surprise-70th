@@ -20,6 +20,36 @@ body {
     
 }
 
+.album-button {
+   display: inline-block;
+
+    background-color: rgb(210, 180, 120);
+
+    color: rgb(28, 24, 54);
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+
+}
+
+.album-button:hover {
+
+    background-color: rgb(180, 120, 140);
+
+    color: rgb(235, 235, 245);
+
+    transform: translateY(-2px);
+}
+
 h2 {
     font-family: "Playfair Display", serif;
     border: none;
